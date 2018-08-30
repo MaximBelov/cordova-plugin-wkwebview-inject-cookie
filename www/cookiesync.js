@@ -17,7 +17,7 @@
 var exec = require('cordova/exec');
 
 module.exports = {
-    injectCookie: function (url, cookieName, cookieValue, successCallback, errorCallback) {
+    setCookie: function (url, cookieName, cookieValue, successCallback, errorCallback) {
 
         if ((url.substr(0,4)=="http")&&(url.indexOf("\/\/")>=0)) {
           url = url.slice(url.indexOf("\/\/")+2);
