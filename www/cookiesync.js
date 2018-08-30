@@ -27,6 +27,6 @@ module.exports = {
         var path = url.substr(sPos,(url.length-sPos));
         var cookie_name = cookieName;
         var cookie_value = cookieValue;
-        exec(successCallback, errorCallback, 'WKWebViewInjectCookie', 'injectCookie', [domain, path, cookie_name, cookie_value]);
+        exec(successCallback, errorCallback, 'WKWebViewInjectCookie', 'setCookie', [domain, path, cookie_name, cookie_value]);
     }
 };
